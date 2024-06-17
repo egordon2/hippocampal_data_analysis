@@ -118,12 +118,33 @@ heatmap_data <- df_list %>%
   reduce(full_join, by = 'Well')
 
 # update well to show experimental condition
-heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A1","A1 100 nM Capsaicin")
-heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A2","A2 100 nM Capsaicin")
-heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A3","A3 1 µM AITC")
-heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A4","A4 1 µM AITC")
-heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A5","A5 1 mM KCl")
-heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A6","A6 1 mM KCl")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A1","A1 100 nM Capsaicin 45K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A2","A2 100 nM Capsaicin 45K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A3","A3 1 µM AITC 45K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A4","A4 1 µM AITC 45K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A5","A5 1 mM KCl45K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"A6","A6 1 mM KCl 45K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"B1","B1 1 µM Capsaicin 90K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"B2","B2 1 µM Capsaicin 90K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"B3","B3 10 µM AITC 90K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"B4","B4 10 µM AITC 90K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"B5","B5 10 mM KCl 90K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"B6","B6 10 mM KCl 90K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"C1","C1 10 µM Capsaicin 130K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"C2","C2 10 µM Capsaicin 130K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"C3","C3 100 µM AITC 130K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"C4","C4 100 µM AITC 130K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"C5","C5 50 mM KCl 130K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"C6","D6 50 mM KCl 130K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"D1","D1 Control 180K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"D2","D2 DMSO 0.01 % 180K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"D3","D3 Control 180K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"D4","D4 DMSO 0.01 % 180K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"D5","D5 Control 180K Cell Density")
+heatmap_data$Well <- str_replace_all(heatmap_data$Well,"D6","D6 DMSO 0.01 % 180K Cell Density")
+
+
+
 
 
 
