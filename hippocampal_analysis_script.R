@@ -1,7 +1,8 @@
 
 ####################################################################################################################
 # R script to perform single electrode analysis of hippocampal neuronal cultures
-# AGONIST CHALLENGE 
+# AGONIST CHALLENGE: 10 mM KCl
+# 90K cells seeded per well
 ####################################################################################################################
 
 # load packages
