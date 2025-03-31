@@ -11,7 +11,7 @@ library(MEAanalysis)
 # data processing
 source("hippocampal_data_processing.R")
 
-# create well bar chart
+# create well bar charts for well B6
 p <- well_barchart(data = well_barchart_data, well_parameter = "number_of_bursts", well_filter = "B6", statistic = se) +
   scale_fill_discrete(name = "Agonist Challenge", labels = c("Baseline", "Acute Incubation", "30 min Incubation", "1 hr Incubation", "24 hr Incubation")) +
   theme(legend.position="none") +
@@ -37,7 +37,7 @@ p <- well_barchart(data = well_barchart_data, well_parameter = "mean_burst_ISI",
         axis.title.y = element_blank())
 print(p)
 
-# create single electrode bar chart
+# create single electrode bar charts for well B6
 p <- single_electrode_barchart(data = electrode_barchart_data, electrode_parameter = "number_of_bursts", electrode_filter = "B6") +
   scale_fill_discrete(name = "Agonist Challenge", labels = c("Baseline", "Acute Incubation", "30 min Incubation", "1 hr Incubation", "24 hr Incubation")) +
   theme(legend.position="none") +
